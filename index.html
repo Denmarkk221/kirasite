@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мгновенное исцеление</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Холст для конфетти -->
+    <canvas id="confetti"></canvas>
+
+    <div class="glass-card">
+        <!-- Секция 1: Главный экран -->
+        <div id="start-section" class="section active">
+            <button id="heal-btn" class="main-btn">Нажми</button>
+        </div>
+
+        <!-- Секция 2: Крутая анимация исцеления -->
+        <div id="loading-section" class="section">
+            <div class="healing-animation">
+                <div class="healing-icon">💚</div>
+                <div class="scan-line"></div>
+            </div>
+            <p class="loading-text">Идёт процесс исцеления...</p>
+        </div>
+
+        <!-- Секция 3: Результат -->
+        <div id="result-section" class="section">
+            <h1 class="glow-text">🎉 УРА! ТЕПЕРЬ ТЫ ЗДОРОВ(А)! 🎉</h1>
+            <div class="smiley">🥳</div>
+            <button id="retry-btn" class="secondary-btn">Попробовать ещё раз</button>
+        </div>
+
+        <!-- Футер с гарантией -->
+        <div class="footer">
+            <p class="joke">Гарантия 1 секунда</p>
+            <p class="disclaimer">Это шутка и не заменяет настоящую медицинскую помощь.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
